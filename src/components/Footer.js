@@ -3,13 +3,10 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => (
   <footer>
-    <div class="footer-strap">
-
+    <div className="footer-strap">
       <h3>develop and grow with s33d</h3>
-
-
-      <div class="copyright">
-        <p>s33d © </p>
+      <div className="copyright">
+        <p>s33d © {(new Date().getFullYear())}</p>
       </div>
     </div>
   </footer>
