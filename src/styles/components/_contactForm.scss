@@ -1,0 +1,28 @@
+form div {
+  padding :1vw;
+}
+
+div.text-field {
+  height : 7vh;
+}
+
+div.text-area {
+  height : 21vh;
+}
+
+input, textarea {
+  padding: 1vh;
+  width : 40vw;
+  margin: 0 auto;
+}
+
+.errorText {
+  color : $red;
+  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  border: 1px solid $red;
+}
