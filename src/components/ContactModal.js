@@ -11,8 +11,8 @@ const ContactModal = (props) => (
     closeTimeoutMS={200}
     className="modal"
   >
-    <h3 className="modal__title">thanks for your message.</h3>
-    <p>{props.name} - We'll get back to you soon!</p>
+    <h3 className="modal__title">thanks {props.name}</h3>
+    <p>We'll get back to you soon !</p>
     <button className="button" onClick={props.handleCloseContactModal}>close</button>
   </Modal>
 )

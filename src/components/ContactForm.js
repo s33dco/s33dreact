@@ -69,7 +69,7 @@ export default class ContactForm extends React.Component{
       message: this.state.message
     })
     this.setState({isSent: true});
-    this.setState({buttonText: 'thanks!'})
+    this.setState({buttonText: 'message sent!'})
 
   };
   handleCloseContactModal = () => {
