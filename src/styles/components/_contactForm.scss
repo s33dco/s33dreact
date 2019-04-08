@@ -3,23 +3,28 @@ form div {
 }
 
 div.text-field {
-  height : 7vh;
+  height : 5vh;
+  margin: 1vh 0;
 }
 
 div.text-area {
-  height : 21vh;
+  height : 20vh;
+  margin: 1vh 0;
 }
 
 input, textarea {
   padding: 1vh;
   width : 40vw;
   margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+border: 1px solid rgb(204, 204, 204);
+box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
 }
 
 .errorText {
   color : $red;
-  font-size: 2vh;
-  margin: 0;
+  font-size: $s-size;
+  margin: 0 0 1vh 0;
   padding: 0;
 }
 

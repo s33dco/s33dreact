@@ -6,8 +6,8 @@ const WelcomePage = () => (
       <h1>Welcome to s33d</h1>
     </div>
     <div>
+      <p>Ruby and JavaScript flavoured full stack web development.</p>
       <p>Single page apps, RESTful APIS, web sites and applications.</p>
-      <p>Ruby and JavaScript flavoured web development.</p>
       <p>so many technologies....</p>
     </div>
   </main>

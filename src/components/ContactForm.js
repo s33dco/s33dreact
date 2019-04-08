@@ -1,7 +1,8 @@
 import React from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 
-const canSend = ({name, nameError, email, emailError, message, messageError}) => {
-  if ((name && !nameError) && (email && !emailError) && (message && !messageError)){
+const canSend = ({name, nameError, email, emailError, message, messageError, isVerified}) => {
+  if ((name && !nameError) && (email && !emailError) && (message && !messageError) && !!isVerified ){
     return false
   } else {
     return true
@@ -18,7 +19,7 @@ export default class ContactForm extends React.Component{
     nameError: '',
     emailError: '',
     messageError: '',
-    sent: false,
+    isVerified : false,
     buttonText: 'Send Message'
   }
   onNameChange = (e) => {
@@ -62,6 +63,11 @@ export default class ContactForm extends React.Component{
       message: this.state.message
     })
   };
+  recaptchaVerified = () => {
+      this.setState({isVerified : true})
+    }
+
+
   render(){
     return(
       <form
@@ -72,7 +78,7 @@ export default class ContactForm extends React.Component{
           <input
             className={this.state.nameError ? 'error' : ''}
             type='text'
-            placeholder='your name'
+            placeholder='name'
             autoFocus
             value={this.state.name}
             onChange={this.onNameChange}
@@ -83,7 +89,7 @@ export default class ContactForm extends React.Component{
           <input
             className={this.state.emailError ? 'error' : ''}
             type='email'
-            placeholder='your email address'
+            placeholder='email'
             value={this.state.email}
             onChange={this.onEmailChange}
           />
@@ -92,14 +98,20 @@ export default class ContactForm extends React.Component{
         <div className="text-area">
           <textarea
             className={this.state.messageError ? 'error' : ''}
-            placeholder="leave your message"
+            placeholder="message"
             rows={6}
             value={this.state.message}
             onChange={this.onMessageChange}
           />
           {this.state.messageError && <p className='errorText'>{this.state.messageError}</p>}
         </div>
-
+        <div className='recaptcha-area'>
+          <ReCAPTCHA
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={this.recaptchaVerified}
+            size='compact'
+          />
+        </div>
         <div>
           <button
             disabled={canSend(this.state)}
