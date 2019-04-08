@@ -1,5 +1,6 @@
 import React from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+import ContactModal from './ContactModal';
 
 const canSend = ({name, nameError, email, emailError, message, messageError, isVerified}) => {
   if ((name && !nameError) && (email && !emailError) && (message && !messageError) && !!isVerified ){
@@ -20,7 +21,8 @@ export default class ContactForm extends React.Component{
     emailError: '',
     messageError: '',
     isVerified : false,
-    buttonText: 'Send Message'
+    buttonText: 'Send Message',
+    isSent : false
   }
   onNameChange = (e) => {
     const name = e.target.value;
@@ -52,21 +54,28 @@ export default class ContactForm extends React.Component{
       this.setState({messageError : ''})
     }
   }
+  recaptchaVerified = () => {
+    this.setState({isVerified : true})
+  }
   onSubmit = (e) => {
     e.preventDefault();
-    this.setState({
-        buttonText: '..sending'
-      });
+    this.setState({buttonText: '..sending'});
+
+    // send the email with nodemailer on promise
+
     this.props.onSubmit({
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     })
-  };
-  recaptchaVerified = () => {
-      this.setState({isVerified : true})
-    }
+    this.setState({isSent: true});
+    this.setState({buttonText: 'thanks!'})
 
+  };
+  handleCloseContactModal = () => {
+    this.setState({isSent : false });
+    // redirect to root
+  }
 
   render(){
     return(
@@ -119,6 +128,12 @@ export default class ContactForm extends React.Component{
             {this.state.buttonText}
           </button>
         </div>
+        <ContactModal
+          isSent={this.state.isSent}
+          handleCloseContactModal={this.handleCloseContactModal}
+          name={this.state.name}
+
+        />
       </form>
     )
   }
