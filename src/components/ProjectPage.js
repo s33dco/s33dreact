@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ProjectPage = (props) =>  (
-    <div>
+    <main>
       <h1>this is project {props.match.params.id}</h1>
-    </div>
+    </main>
   );
 
 export default ProjectPage;

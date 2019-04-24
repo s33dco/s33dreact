@@ -1,24 +1,27 @@
-form div {
+form.contact-form div {
   padding :1vw;
+  width : 40vw;
+  margin : 0 auto;
+}
+
+.text-field, .textarea, .recaptcha-area {
+    margin: 1vh 0;
 }
 
 div.text-field {
   height : 5vh;
-  margin: 1vh 0;
 }
 
-div.text-area {
+div.text-area{
   height : 20vh;
-  margin: 1vh 0;
 }
 
-input, textarea {
+input, textarea, .recaptcha-area{
   padding: 1vh;
   width : 40vw;
-  margin: 0 auto;
   background-color: rgb(255, 255, 255);
-border: 1px solid rgb(204, 204, 204);
-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
 }
 
 .errorText {

@@ -12,7 +12,6 @@ const canSend = ({name, nameError, email, emailError, message, messageError, isV
 
 
 export default class ContactForm extends React.Component{
-
   state = {
     name: '',
     message: '',
@@ -59,7 +58,7 @@ export default class ContactForm extends React.Component{
   }
   onSubmit = (e) => {
     e.preventDefault();
-    this.setState({buttonText: '..sending'});
+    this.setState({buttonText: '...sending'});
 
     // send the email with nodemailer on promise
 
@@ -68,15 +67,20 @@ export default class ContactForm extends React.Component{
       email: this.state.email,
       message: this.state.message
     })
-    this.setState({isSent: true});
-    this.setState({buttonText: 'message sent!'})
+
+    //
+
+
+    this.setState({
+        isSent: true,
+        buttonText: 'message sent!'
+      })
 
   };
   handleCloseContactModal = () => {
     this.setState({isSent : false });
-    // redirect to root
+    this.props.goHome()
   }
-
   render(){
     return(
       <form
@@ -132,7 +136,6 @@ export default class ContactForm extends React.Component{
           isSent={this.state.isSent}
           handleCloseContactModal={this.handleCloseContactModal}
           name={this.state.name}
-
         />
       </form>
     )
