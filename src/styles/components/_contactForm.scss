@@ -1,36 +1,40 @@
 form.contact-form div {
-  padding :1vw;
-  width : 40vw;
-  margin : 0 auto;
+	padding: 1vw;
+	width: 40vw;
+	margin: 0 auto;
 }
 
-.text-field, .textarea, .recaptcha-area {
-    margin: 1vh 0;
+.text-field,
+.textarea,
+.recaptcha-area {
+	margin: 1vh 0;
 }
 
 div.text-field {
-  height : 5vh;
+	height: 5vh;
 }
 
-div.text-area{
-  height : 20vh;
+div.text-area {
+	height: 20vh;
 }
 
-input, textarea, .recaptcha-area{
-  padding: 1vh;
-  width : 40vw;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(204, 204, 204);
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+input,
+textarea,
+.recaptcha-area {
+	padding: 1vh;
+	width: 40vw;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(204, 204, 204);
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
 }
 
 .errorText {
-  color : $red;
-  font-size: $s-size;
-  margin: 0 0 1vh 0;
-  padding: 0;
+	color: $red;
+	font-size: $s-size;
+	margin: 0 0 1vh 0;
+	padding: 0;
 }
 
 .error {
-  border: 1px solid $red;
+	border: 1px solid $red;
 }

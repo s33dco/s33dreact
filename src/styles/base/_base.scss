@@ -1,43 +1,42 @@
 html {
-  font-size :62.5%;     // 1.6rem = 16px
+	font-size: 62.5%; // 1.6rem = 16px
 }
 body {
-  background:  #fcfcfc;
-  color: #191d32;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: $m-size;
-  margin: 0 2vw;
+	background: #fcfcfc;
+	color: #191d32;
+	font-family: "Ubuntu", sans-serif;
+	font-size: $m-size;
+	margin: 0 2vw;
 }
 
 .container {
-  display : flex;
-  flex-direction: column;
-  margin: 2vh auto;
-  min-height: 96vh;
+	display: flex;
+	flex-direction: column;
+	margin: 2vh auto;
+	min-height: 96vh;
 }
 
 header {
-  flex: none;
+	flex: none;
 }
 
 main {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 footer {
-  flex: none;
+	flex: none;
 }
 
-
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 button:disabled {
-  cursor: default;
+	cursor: default;
 }
 
 .is-active {
-  font-weight: bold;
-  color : $activeLink;
+	font-weight: bold;
+	color: $activeLink;
 }
