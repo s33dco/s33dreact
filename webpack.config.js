@@ -1,33 +1,7 @@
-const path = require("path")
-
-module.exports = {
-	mode: "development",
-	entry: "./src/app.js",
-	output: {
-		path: path.join(__dirname, "public"),
-		filename: "bundle.js"
-	},
-	module: {
-		rules: [
-			{
-				loader: "babel-loader",
-				test: /\.js$/, //regexp for .js files
-				exclude: /node_modules/
-			},
-			{
-				test: /\.s?css$/,
-				use: [
-					// multiple loaders in array
-					"style-loader",
-					"css-loader",
-					"sass-loader"
-				]
-			}
-		]
-	},
-	devtool: "cheap-module-eval-source-map",
-	devServer: {
-		contentBase: path.join(__dirname, "public"),
-		historyApiFallback: true
+module.exports = function(env) {
+	if (env === undefined) {
+		env = 'dev'
 	}
+	console.log(`🛠 👉🏻 building for ${env}`)
+	return require(`./config/webpack.${env}.config.js`)
 }

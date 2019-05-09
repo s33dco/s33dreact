@@ -1,18 +1,11 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from 'react'
+import ProjectList from './ProjectList'
+import projects from '../data/projects'
 
 const ProjectsPage = props => (
 	<main>
-		<h3>Projects Page</h3>
-		<div class='project'>
-			<Link to='/projects/project-one'>Project One</Link>
-		</div>
-		<div class='project'>
-			<Link to='/projects/project-two'>Project Two</Link>
-		</div>
-		<div class='project'>
-			<Link to='/projects/project-three'>Project Three</Link>
-		</div>
+		<h1>Projects Page</h1>
+		<ProjectList projects={projects} />
 	</main>
 )
 
