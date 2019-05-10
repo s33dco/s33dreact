@@ -4,7 +4,7 @@ html {
 body {
 	background: #fcfcfc;
 	color: #191d32;
-	font-family: "Ubuntu", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: $m-size;
 	margin: 0 2vw;
 }
@@ -39,4 +39,26 @@ button:disabled {
 .is-active {
 	font-weight: bold;
 	color: $activeLink;
+}
+
+a.read-more {
+	font-weight: bold;
+	cursor: pointer;
+	:vistied {
+		color: $activeLink;
+	}
+	:hover {
+		cursor: pointer;
+	}
+}
+
+img {
+	border-style: none;
+	margin: 0.1em;
+	width: 30px;
+}
+
+.paragraph {
+	line-height: 1.5;
+	margin: 2.5vh 0;
 }

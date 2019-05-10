@@ -1,5 +1,5 @@
-import React from "react"
-import ContactForm from "./ContactForm"
+import React from 'react'
+import ContactForm from './ContactForm'
 
 const ContactPage = props => (
 	<main>
@@ -7,10 +7,10 @@ const ContactPage = props => (
 		<ContactForm
 			onSubmit={email => {
 				console.log(email)
-				console.log("now send email")
+				console.log('now send email')
 			}}
 			goHome={() => {
-				props.history.push("/")
+				props.history.push('/')
 			}}
 		/>
 	</main>
