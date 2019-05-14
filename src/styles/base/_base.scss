@@ -42,19 +42,19 @@ button:disabled {
 }
 
 a.read-more {
-	font-weight: bold;
 	cursor: pointer;
+	font-weight: bold;
 	:vistied {
 		color: $activeLink;
 	}
 	:hover {
-		cursor: pointer;
+		color: $activeLink;
 	}
 }
 
 img {
 	border-style: none;
-	margin: 0.1em;
+	margin: 0.25em;
 	width: 30px;
 }
 

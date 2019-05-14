@@ -16,17 +16,13 @@ export default class ProjectItem extends React.Component {
 		this.setState({ isOpen: false })
 	}
 
-	// new component to render an icon
-	// new component to render a link from icon
-	// <LinkIcon link={url} icon={pathToFile} /> - github, npm, ruby gems, livesite
-
 	render() {
 		return (
 			<div className='projectItem'>
 				<h3>{this.props.name}</h3>
 
 				<div className='icons'>
-					{this.props.icons.length === 0
+					{!this.props.icons && this.props.icons.length === 0
 						? null
 						: this.props.icons.map((icon, index) => {
 								return <Icon key={index} imageLink={`./images/${icon}`} />
@@ -64,21 +60,14 @@ export default class ProjectItem extends React.Component {
 				<a className='align-right read-more' onClick={this.handleOpenProductModal}>
 					read more...
 				</a>
-				<ProductModal
-					name={this.props.name}
-					isOpen={this.state.isOpen}
-					paras={this.props.paras}
-					icons={this.props.icons}
-					gem={this.props.gem}
-					gemAlt={this.props.gemAlt}
-					npm={this.props.npm}
-					npmAlt={this.props.npmAlt}
-					site={this.props.site}
-					siteAlt={this.props.siteAlt}
-					repo={this.props.repo}
-					repoAlt={this.props.repoAlt}
-					willClose={this.handleCloseProductModal}
-				/>
+				{this.props.paras && (
+					<ProductModal
+						name={this.props.name}
+						isOpen={this.state.isOpen}
+						paras={this.props.paras}
+						willClose={this.handleCloseProductModal}
+					/>
+				)}
 			</div>
 		)
 	}

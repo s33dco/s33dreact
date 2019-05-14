@@ -1,6 +1,7 @@
-import React from "react"
-import ReCAPTCHA from "react-google-recaptcha"
-import ContactModal from "./ContactModal"
+import React from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
+import ContactModal from './ContactModal'
+import * as emailjs from 'emailjs-com'
 
 const canSend = ({ name, nameError, email, emailError, message, messageError, isVerified }) => {
 	if (name && !nameError && (email && !emailError) && (message && !messageError) && !!isVerified) {
@@ -12,21 +13,21 @@ const canSend = ({ name, nameError, email, emailError, message, messageError, is
 
 export default class ContactForm extends React.Component {
 	state = {
-		name: "",
-		message: "",
-		email: "",
-		nameError: "",
-		emailError: "",
-		messageError: "",
+		name: '',
+		message: '',
+		email: '',
+		nameError: '',
+		emailError: '',
+		messageError: '',
 		isVerified: false,
-		buttonText: "Send Message",
+		buttonText: 'Send Message',
 		isSent: false
 	}
 	onNameChange = e => {
 		const name = e.target.value
 		if (name.match(/\w/)) {
 			this.setState({ name })
-			this.setState({ nameError: "" })
+			this.setState({ nameError: '' })
 		} else {
 			this.setState({ name })
 			this.setState({ nameError: "Your name doesn't look right!" })
@@ -36,20 +37,20 @@ export default class ContactForm extends React.Component {
 		const email = e.target.value
 		if (email.match(/[\w-]+@([\w-]+\.)+[\w-]+/)) {
 			this.setState({ email })
-			this.setState({ emailError: "" })
+			this.setState({ emailError: '' })
 		} else {
 			this.setState({ email })
-			this.setState({ emailError: "sure about this email address?" })
+			this.setState({ emailError: 'sure about this email address?' })
 		}
 	}
 	onMessageChange = e => {
 		const message = e.target.value
 		if (!message || !message.match(/\w/)) {
 			this.setState({ message })
-			this.setState({ messageError: "Just use words please...." })
+			this.setState({ messageError: 'Just use words please....' })
 		} else {
 			this.setState({ message })
-			this.setState({ messageError: "" })
+			this.setState({ messageError: '' })
 		}
 	}
 	recaptchaVerified = () => {
@@ -57,22 +58,40 @@ export default class ContactForm extends React.Component {
 	}
 	onSubmit = e => {
 		e.preventDefault()
-		this.setState({ buttonText: "...sending" })
+		this.setState({ buttonText: '...sending' })
 
 		// send the email with nodemailer on promise
 
-		this.props.onSubmit({
+		// this.props.onSubmit({
+		// 	name: this.state.name,
+		// 	email: this.state.email,
+		// 	message: this.state.message
+		// })
+
+		const emailDetails = {
 			name: this.state.name,
 			email: this.state.email,
 			message: this.state.message
-		})
+		}
+
+		emailjs
+			.send('sendgrid', 's33dcontact', emailDetails, 'user_rK7ue2eQ4bCylF1wDdD9o')
+			.then(
+				response => {
+					console.log('SUCCESS!', response.status, response.text)
+				},
+				err => {
+					console.log('FAILED...', err)
+				}
+			)
+			.then(() => {
+				this.setState({
+					isSent: true,
+					buttonText: 'message sent!'
+				})
+			})
 
 		//
-
-		this.setState({
-			isSent: true,
-			buttonText: "message sent!"
-		})
 	}
 	handleCloseContactModal = () => {
 		this.setState({ isSent: false })
@@ -83,7 +102,7 @@ export default class ContactForm extends React.Component {
 			<form className='contact-form' onSubmit={this.onSubmit}>
 				<div className='text-field'>
 					<input
-						className={this.state.nameError ? "error" : ""}
+						className={this.state.nameError ? 'error' : ''}
 						type='text'
 						placeholder='name'
 						autoFocus
@@ -94,7 +113,7 @@ export default class ContactForm extends React.Component {
 				</div>
 				<div className='text-field'>
 					<input
-						className={this.state.emailError ? "error" : ""}
+						className={this.state.emailError ? 'error' : ''}
 						type='email'
 						placeholder='email'
 						value={this.state.email}
@@ -104,7 +123,7 @@ export default class ContactForm extends React.Component {
 				</div>
 				<div className='text-area'>
 					<textarea
-						className={this.state.messageError ? "error" : ""}
+						className={this.state.messageError ? 'error' : ''}
 						placeholder='message'
 						rows={6}
 						value={this.state.message}
