@@ -60,14 +60,6 @@ export default class ContactForm extends React.Component {
 		e.preventDefault()
 		this.setState({ buttonText: '...sending' })
 
-		// send the email with nodemailer on promise
-
-		// this.props.onSubmit({
-		// 	name: this.state.name,
-		// 	email: this.state.email,
-		// 	message: this.state.message
-		// })
-
 		const emailDetails = {
 			name: this.state.name,
 			email: this.state.email,
@@ -75,7 +67,7 @@ export default class ContactForm extends React.Component {
 		}
 
 		emailjs
-			.send('sendgrid', 's33dcontact', emailDetails, 'user_rK7ue2eQ4bCylF1wDdD9o')
+			.send(process.env.SERVICE, process.env.TEMPLATE, emailDetails, process.env.USER_ID)
 			.then(
 				response => {
 					console.log('SUCCESS!', response.status, response.text)
