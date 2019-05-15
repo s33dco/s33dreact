@@ -14,7 +14,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{ from: './src/static/images', to: 'images' },
-			{ from: './src/_redirects', to: '_redirects' }
+			{ from: './src/_redirects', to: '/' }
 		]),
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
