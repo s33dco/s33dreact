@@ -24,8 +24,7 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: 'A single page app online portfolio and contact page.',
 		paras: [
-			'A JAMstack single page app built with a React frontend, deployed as a static site and using AWS Lambda for the contact page.',
-			'Built to replace the Jekyll generated static site.'
+			'A JAMstack single page app built with a React frontend and deployed as a static site and using a serverless AWS Lambda function for the contact page.'
 		]
 	},
 	{
@@ -34,11 +33,12 @@ export default [
 		icons: ['js.png', 'node.png', 'express.png', 'mongo.png'],
 		repo: 'https://github.com/s33dco/sme',
 		repoAlt: 'view the repo on GitHub',
-		intro: 'SME website with invoice generating and expense tracking back end.',
+		intro: 'A website with invoice generating and expense tracking back end.',
 		paras: [
 			'Built to take the hassle out of being self-employed SME is a company website with contact page, coupled with a secure back end to handle invoicing and HMRC tax returns.',
-			'',
-			''
+			'Designed to take the headache out of administrating a small business the mobile friendly app enables the user to create and email invoices aswell as track of expenses from a mobile phone.',
+			'Reports can be pulled by date, previous invoiced items can be viewed under each client page providing a work history.',
+			'The Express app has a MongoDB backend, templated with EJS on the front and tested with Jest.'
 		]
 	},
 	{

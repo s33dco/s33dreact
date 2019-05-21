@@ -71,7 +71,6 @@ export default class ContactForm extends React.Component {
 		axios
 			.post('/.netlify/functions/send-email', emailDetails)
 			.then(res => {
-				console.log(res)
 				this.setState({
 					isSent: true,
 					buttonText: 'message sent!',

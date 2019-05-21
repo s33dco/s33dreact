@@ -17,7 +17,6 @@ exports.handler = (event, context, callback) => {
 	sgMail
 		.send(msg)
 		.then(res => {
-			console.log(res)
 			callback(null, {
 				statusCode: 200,
 				body: JSON.stringify({
@@ -27,7 +26,6 @@ exports.handler = (event, context, callback) => {
 			})
 		})
 		.catch(e => {
-			console.log(e)
 			callback({
 				statusCode: 500,
 				body: JSON.stringify({

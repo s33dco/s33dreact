@@ -12,12 +12,15 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	margin: 2vh auto;
+	margin: 0 auto;
 	min-height: 96vh;
 }
 
 header {
-	flex: none;
+	background: #fcfcfc;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 }
 
 main {
