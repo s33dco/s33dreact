@@ -1,7 +1,7 @@
 import React from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import ContactModal from './ContactModal'
-import * as emailjs from 'emailjs-com'
+import axios from 'axios'
 
 const canSend = ({ name, nameError, email, emailError, message, messageError, isVerified }) => {
 	if (name && !nameError && (email && !emailError) && (message && !messageError) && !!isVerified) {
@@ -21,7 +21,9 @@ export default class ContactForm extends React.Component {
 		messageError: '',
 		isVerified: false,
 		buttonText: 'Send Message',
-		isSent: false
+		isSent: false,
+		modalMessage: '',
+		reply: ''
 	}
 	onNameChange = e => {
 		const name = e.target.value
@@ -66,25 +68,27 @@ export default class ContactForm extends React.Component {
 			message: this.state.message
 		}
 
-		emailjs
-			.send(process.env.SERVICE, process.env.TEMPLATE, emailDetails, process.env.USER_ID)
-			.then(
-				response => {
-					console.log('SUCCESS!', response.status, response.text)
-				},
-				err => {
-					console.log('FAILED...', err)
-				}
-			)
-			.then(() => {
+		axios
+			.post('/.netlify/functions/send-email', emailDetails)
+			.then(res => {
+				console.log(res)
 				this.setState({
 					isSent: true,
-					buttonText: 'message sent!'
+					buttonText: 'message sent!',
+					modalMessage: `${res.data.message}`,
+					reply: `${res.data.reply}`
 				})
 			})
-
-		//
+			.catch(e => {
+				this.setState({
+					isSent: true,
+					buttonText: 'hmmm...',
+					modalMessage: `${e.message}`,
+					reply: `Sorry ${this.state.name} this isn't working, maybe you could try again?`
+				})
+			})
 	}
+
 	handleCloseContactModal = () => {
 		this.setState({ isSent: false })
 		this.props.goHome()
@@ -136,7 +140,8 @@ export default class ContactForm extends React.Component {
 				<ContactModal
 					isSent={this.state.isSent}
 					handleCloseContactModal={this.handleCloseContactModal}
-					name={this.state.name}
+					message={this.state.modalMessage}
+					reply={this.state.reply}
 				/>
 			</form>
 		)

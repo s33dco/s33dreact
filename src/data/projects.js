@@ -24,7 +24,7 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: 'A single page app online portfolio and contact page.',
 		paras: [
-			'A single page app online portfolio and contact page for s33d built in React and Wepback.',
+			'A JAMstack single page app built with a React frontend, deployed as a static site and using AWS Lambda for the contact page.',
 			'Built to replace the Jekyll generated static site.'
 		]
 	},

@@ -12,14 +12,19 @@
 		"serve:p": "NODE_ENV=production yarn build:p && NODE_ENV=production node server/server.js",
 		"build:d": "webpack $npm_package_config_webpack_args",
 		"build:p": "webpack $npm_package_config_webpack_args --env production",
+		"start:lambda": "netlify-lambda serve src/functions",
+		"build:lambda": "netlify-lambda build src/functions",
 		"test": "jest --watch",
 		"start": "node server/server.js",
-		"heroku-postbuild": "yarn run build:p"
+		"publish": "yarn build:p && "
 	},
 	"dependencies": {
-		"emailjs-com": "^2.3.2",
+		"@babel/plugin-proposal-async-generator-functions": "^7.2.0",
+		"@sendgrid/mail": "^6.4.0",
+		"axios": "^0.18.0",
 		"express": "^4.16.4",
 		"moment": "^2.24.0",
+		"netlify-lambda": "^1.4.7",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-google-recaptcha": "^1.0.5",
