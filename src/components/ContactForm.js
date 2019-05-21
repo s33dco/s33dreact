@@ -129,7 +129,7 @@ export default class ContactForm extends React.Component {
 				</div>
 				<div className='recaptcha-area'>
 					<ReCAPTCHA
-						sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+						sitekey='6Leo6DgUAAAAAPrzkoZ4rYYUVbUi6YxQakeuQAhb'
 						onChange={this.recaptchaVerified}
 						size='compact'
 					/>
