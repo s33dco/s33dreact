@@ -6,3 +6,8 @@
 	width: 40vw;
 	text-align: center;
 }
+
+.button__contact__modal {
+	@extend .button
+	margin-top: 2.5vh;
+}
