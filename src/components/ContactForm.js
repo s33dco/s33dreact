@@ -133,13 +133,13 @@ export default class ContactForm extends React.Component {
 						size='compact'
 					/>
 				</div>
-				<div>
+				<div className='form__button'>
 					<button className='button' disabled={canSend(this.state)}>
 						{this.state.buttonText}
 					</button>
 				</div>
 				<ContactModal
-					className='button form-button'
+					className='button'
 					isSent={this.state.isSent}
 					handleCloseContactModal={this.handleCloseContactModal}
 					message={this.state.modalMessage}

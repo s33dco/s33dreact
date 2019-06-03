@@ -14,7 +14,7 @@
 }
 
 .text-area {
-	height: 20vh;
+	height: 18vh;
 }
 
 input,
@@ -31,9 +31,14 @@ textarea,
 	color: $red;
 	font-size: $error-size;
 	margin: 0 0 1.5vh 0;
-	padding: 0;
+	padding: 0 0 0.5rem;
 }
 
 .error {
 	border: 1px solid $red;
+}
+
+.form__button {
+	width: 40vw;
+	margin: 0 auto 2.5vh;
 }

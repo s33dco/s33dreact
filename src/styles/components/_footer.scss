@@ -7,10 +7,7 @@
 }
 
 .footer__icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin: 0 30vw;
+	@extend .footer__strap;
 }
 
 .footer__icons img {
