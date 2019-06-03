@@ -1,16 +1,16 @@
-import React from "react"
-import { NavLink } from "react-router-dom"
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => (
 	<header>
-		<nav>
-			<NavLink to='/' activeClassName='is-active' exact={true}>
+		<nav className='header'>
+			<NavLink className='header__link' to='/' activeClassName='is-active' exact={true}>
 				Welcome
 			</NavLink>
-			<NavLink to='/projects' activeClassName='is-active' exact={true}>
+			<NavLink className='header__link' to='/projects' activeClassName='is-active' exact={true}>
 				Projects
 			</NavLink>
-			<NavLink to='/contact' activeClassName='is-active' exact={true}>
+			<NavLink className='header__link' to='/contact' activeClassName='is-active' exact={true}>
 				Contact
 			</NavLink>
 		</nav>

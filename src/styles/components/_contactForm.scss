@@ -1,20 +1,19 @@
-form.contact-form div {
-	padding: 1vw;
-	width: 40vw;
+.contact-form {
 	margin: 0 auto;
+	width: 60vw;
 }
 
 .text-field,
-.textarea,
+.text-area,
 .recaptcha-area {
-	margin: 1vh 0;
+	margin-bottom: 3vh;
 }
 
-div.text-field {
+.text-field {
 	height: 5vh;
 }
 
-div.text-area {
+.text-area {
 	height: 20vh;
 }
 
@@ -22,16 +21,16 @@ input,
 textarea,
 .recaptcha-area {
 	padding: 1vh;
-	width: 40vw;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(204, 204, 204);
 	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+	width: 60vw;
 }
 
 .errorText {
 	color: $red;
-	font-size: $s-size;
-	margin: 0 0 1vh 0;
+	font-size: $error-size;
+	margin: 0 0 1.5vh 0;
 	padding: 0;
 }
 

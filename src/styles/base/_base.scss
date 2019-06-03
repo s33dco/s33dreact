@@ -1,67 +1,49 @@
-html {
-	font-size: 62.5%; // 1.6rem = 16px
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
 body {
 	background: #fcfcfc;
 	color: #191d32;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $m-size;
-	margin: 0 2vw;
+	line-height: 1.5;
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	min-height: 96vh;
+	margin: 0 5vw;
 }
 
 header {
 	background: #fcfcfc;
+	height: 6vh;
 	position: fixed;
-	width: 100%;
+	width: 90vw;
 	z-index: 10;
 }
 
 main {
-	flex-grow: 1;
+	flex: 1;
+	margin-top: 6vh;
+	min-height: 78vh;
 }
 
 footer {
-	flex: none;
+	flex: 0;
+	height: 5vh;
+	width: 90vw;
 }
 
-button {
-	cursor: pointer;
+.page-title {
+	margin: 0;
+	font-size: $title-size;
+	padding-bottom: 2.5vh;
+	text-align: center;
 }
 
-button:disabled {
-	cursor: default;
-}
-
-.is-active {
-	font-weight: bold;
-	color: $activeLink;
-}
-
-a.read-more {
-	cursor: pointer;
-	font-weight: bold;
-	:vistied {
-		color: $activeLink;
-	}
-	:hover {
-		color: $activeLink;
-	}
-}
-
-img {
-	border-style: none;
-	margin: 0.25em;
-	width: 30px;
-}
-
-.paragraph {
-	line-height: 1.5;
-	margin: 2.5vh 0;
+.active {
+	color: $red;
 }

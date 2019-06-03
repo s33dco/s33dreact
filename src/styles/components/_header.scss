@@ -1,0 +1,16 @@
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header__link {
+	font-size: $header-link;
+	padding: 2vh 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.is-active {
+	color: $activeLink;
+}

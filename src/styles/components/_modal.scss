@@ -21,17 +21,21 @@
 	background: $background;
 	color: $text;
 	max-width: 80vw;
-	padding: $l-size;
+	padding: $s-size;
 	text-align: center;
+	max-height: 85vh;
+	overflow: scroll;
 }
 
 .modal__title {
-	margin: 0 0 $l-size 0;
+	margin: 0;
 }
 
 .modal__body {
-	font-size: 2rem;
 	font-weight: 300;
-	margin: 0 0 $l-size 0;
-	word-break: break-all;
+	margin: 0 0 $m-size 0;
+}
+
+.paragraph {
+	padding-bottom: 2.5vh;
 }

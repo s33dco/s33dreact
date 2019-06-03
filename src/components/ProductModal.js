@@ -15,7 +15,7 @@ const ProductModal = props => (
 		className='modal'
 	>
 		<h3 className='modal__title'>{props.name}</h3>
-		<div>
+		<div className='modal__body'>
 			{props.paras.length === 0
 				? null
 				: props.paras.map((para, index) => {

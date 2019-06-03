@@ -1,0 +1,19 @@
+.footer__strap {
+	text-align: center;
+}
+.footer__copyright {
+	@extend .footer__strap;
+	padding-bottom: 2.5vh;
+}
+
+.footer__icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 30vw;
+}
+
+.footer__icons img {
+	padding: 5px;
+	height: 5vh;
+}

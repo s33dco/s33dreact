@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 
 const ContactPage = props => (
 	<main>
-		<h1>Get in touch.</h1>
+		<h1 className='page-title'>Get in touch.</h1>
 		<ContactForm
 			goHome={() => {
 				props.history.push('/')

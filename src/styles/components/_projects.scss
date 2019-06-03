@@ -1,0 +1,30 @@
+.projectLists {
+	display: flex;
+	flex-direction: column;
+}
+
+.projectItem {
+	margin: 0 0 2.5vh 0;
+}
+
+.project__header {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.project__title {
+	font-size: $project-name;
+	padding-right: 1vw;
+}
+
+.project__readmore {
+	text-align: right;
+	width: 90vw;
+}
+
+.project__icons img {
+	display: inline-block;
+	height: 2.5rem;
+	padding: 1vh 1vw;
+}

@@ -134,9 +134,12 @@ export default class ContactForm extends React.Component {
 					/>
 				</div>
 				<div>
-					<button disabled={canSend(this.state)}>{this.state.buttonText}</button>
+					<button className='button' disabled={canSend(this.state)}>
+						{this.state.buttonText}
+					</button>
 				</div>
 				<ContactModal
+					className='button form-button'
 					isSent={this.state.isSent}
 					handleCloseContactModal={this.handleCloseContactModal}
 					message={this.state.modalMessage}
