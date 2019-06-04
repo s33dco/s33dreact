@@ -59,11 +59,9 @@ export default class ProjectItem extends React.Component {
 				</div>
 
 				<p>{this.props.intro}</p>
-				<div className='project__readmore'>
-					<a className='project__more' onClick={this.handleOpenProductModal}>
-						read more
-					</a>
-				</div>
+				<a className='project__readmore' onClick={this.handleOpenProductModal}>
+					read more
+				</a>
 
 				{this.props.paras && (
 					<ProductModal

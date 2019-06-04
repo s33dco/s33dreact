@@ -13,7 +13,7 @@ const ContactModal = props => (
 	>
 		<h3 className='modal__title'>{props.message}</h3>
 		<p>{props.reply}</p>
-		<button className='button' onClick={props.handleCloseContactModal}>
+		<button className='button__contact__modal' onClick={props.handleCloseContactModal}>
 			close
 		</button>
 	</Modal>

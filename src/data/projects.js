@@ -128,7 +128,7 @@ export default [
 	},
 	{
 		id: 2,
-		name: 'Roar Chocolate',
+		name: 'Roar',
 		icons: ['php.png', 'opencart.png'],
 		repo: 'https://github.com/s33dco/roarchocolate',
 		repoAlt: 'view the repo on GitHub',

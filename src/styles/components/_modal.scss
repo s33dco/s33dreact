@@ -25,6 +25,9 @@
 	text-align: center;
 	max-height: 85vh;
 	overflow: scroll;
+	@media (min-width: $desktop-breakpoint) {
+		padding: $m-size;
+	}
 }
 
 .modal__title {

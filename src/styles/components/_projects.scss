@@ -1,16 +1,28 @@
 .projectLists {
 	display: flex;
 	flex-direction: column;
+	@media (min-width: $desktop-breakpoint) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 90vw;
+	}
 }
 
 .projectItem {
-	margin: 0 0 2.5vh 0;
+	margin: 2.5vh;
+	@media (min-width: $desktop-breakpoint) {
+		width: 25vw;
+	}
 }
 
 .project__header {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
+	@media (min-width: $desktop-breakpoint) {
+		flex-direction: column;
+	}
 }
 
 .project__title {
@@ -20,11 +32,14 @@
 
 .project__readmore {
 	text-align: right;
-	width: 90vw;
 }
 
 .project__icons img {
 	display: inline-block;
 	height: 2.5rem;
 	padding: 1vh 1vw;
+	@media (min-width: $desktop-breakpoint) {
+		height: 2.15rem;
+		padding: 0.75vh 0.75vw;
+	}
 }
