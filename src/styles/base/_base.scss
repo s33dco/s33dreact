@@ -5,6 +5,8 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	background: #fcfcfc;
 	color: #191d32;
 	font-family: 'Ubuntu', sans-serif;
@@ -23,8 +25,15 @@ body {
 	}
 }
 
-.page {
+.page__header {
+	background: $background;
+	height: 6vh;
 	width: 100%;
+	@media (min-width: $desktop-breakpoint) {
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 header {
@@ -35,17 +44,16 @@ header {
 	z-index: 10;
 	@media (min-width: $desktop-breakpoint) {
 		height: 3rem;
-		margin-left: -$xl-size;
 	}
 }
 
 main {
-	flex: 1;
-	margin-top: 6vh;
+	flex-grow: 1;
+	margin-top: 1vh;
 	min-height: 78vh;
 	@media (min-width: $desktop-breakpoint) {
-		margin-top: 4rem;
-		min-height: 30.5rem;
+		margin-top: 1rem;
+		min-height: 30rem;
 		width: 100%;
 	}
 }
@@ -64,7 +72,6 @@ footer {
 .page-title {
 	margin: 0;
 	font-size: $title-size;
-	// padding-bottom: 2.5vh;
 	text-align: center;
 	@media (min-width: $desktop-breakpoint) {
 		padding-bottom: $s-size;

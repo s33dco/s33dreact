@@ -145,7 +145,7 @@ export default [
 	},
 	{
 		id: 1,
-		name: 'Board Leaves',
+		name: 'Broad Leaves',
 		icons: ['php.png', 'wp.png'],
 		repo: 'https://github.com/s33dco/broadleaves',
 		repoAlt: 'view the repo on GitHub',
