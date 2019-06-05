@@ -36,8 +36,8 @@ export default [
 		intro: 'A website with invoice generating and expense tracking back end.',
 		paras: [
 			'Built to take the hassle out of being self-employed SME is a company website with contact page, coupled with a secure back end to handle invoicing and HMRC tax returns.',
-			'Designed to take the headache out of administrating a small business the mobile friendly app enables the user to create and email invoices aswell as track of expenses from a mobile phone.',
-			'Reports can be pulled by date, previous invoiced items can be viewed under each client page providing a work history.',
+			'The mobile friendly app enables the user to create and print or email invoices aswell as track of expenses from a mobile phone.',
+			'Reports can be pulled by date, previous invoiced items can be viewed under each client page providing a work history. All expenses are broken down via HMRC categories to assist the end of year tax return.',
 			'The Express app has a MongoDB backend, templated with EJS on the front and tested with Jest.'
 		]
 	},
@@ -81,7 +81,9 @@ export default [
 			"An invitation only auction site developed so sales can be set up quickly and easily from a smart phone. Used to manage export auctions on a 'best bid first' basis the app is not an Ebay derivative, more of a private sales network.",
 			'The App supports multiple auciton houses and sale types which can be started at the click of a button.',
 			'Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
-			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers.'
+			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers.',
+			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, be that buyers or sellers, only authorised users, (Auctineers) have crud access to the data.',
+			'Fully tested with Rspec and ready to go. Get in touch to view the live site.'
 		]
 	},
 	{
@@ -102,9 +104,11 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: 'An app to administer a self-managing housing Co-op.',
 		paras: [
-			'Built from scratch this Rails app was designed to take the stress out of managing a Housing Coop and in particular to handle the rent reporting and maintenance histories of the properties.',
-			'',
-			''
+			'Built from scratch this Rails app was designed to take the stress out of managing a Housing Coop.',
+			"The app keep tracks of the Co-op's finances, (rent payments and maintenance costs per property), both of which can be reported on to assist budgeting plans",
+			'Also participation is tracked, with regard to attendance of meetings and roles taken within the Co-op.',
+			'The app has a public frontend with general information and a contact page with protected routes for autheticated members, only authorised members have crud access to the data.',
+			'Fully tested with Rspec and ready to go. Get in touch to view the live site.'
 		]
 	},
 	{
