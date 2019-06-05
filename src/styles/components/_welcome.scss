@@ -1,0 +1,12 @@
+.techbox {
+	align-content: center;
+	margin: 0 auto;
+	width: 70vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.techbox > img {
+	display: inline-block;
+	height: 6vh;
+}
