@@ -33,11 +33,11 @@ export default [
 		icons: ['js.png', 'node.png', 'express.png', 'mongo.png'],
 		repo: 'https://github.com/s33dco/sme',
 		repoAlt: 'view the repo on GitHub',
-		intro: 'A website with invoice generating and expense tracking back end.',
+		intro: 'A website with an invoice generating and expense tracking back end.',
 		paras: [
 			'Built to take the hassle out of being self-employed SME is a company website with contact page, coupled with a secure back end to handle invoicing and HMRC tax returns.',
 			'The mobile friendly app enables the user to create and print or email invoices aswell as track of expenses from a mobile phone.',
-			'Reports can be pulled by date, previous invoiced items can be viewed under each client page providing a work history. All expenses are broken down via HMRC categories to assist the end of year tax return.',
+			'Reports can be pulled by date range and downlaoded, previous invoiced items can be viewed under each client page providing a work history. All expenses are broken down via HMRC categories to assist the end of year tax return.',
 			'The Express app has a MongoDB backend, templated with EJS on the front and tested with Jest.'
 		]
 	},
@@ -82,7 +82,7 @@ export default [
 			'The App supports multiple auciton houses and sale types which can be started at the click of a button.',
 			'Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
 			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers.',
-			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, be that buyers or sellers, only authorised users, (Auctineers) have crud access to the data.',
+			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, be that buyers or sellers, only authorised users, (Auctioneers) have crud access to the data.',
 			'Fully tested with Rspec and ready to go. Get in touch to view the live site.'
 		]
 	},
@@ -127,7 +127,8 @@ export default [
 		paras: [
 			"Banco was written to summarize and profile csv files downloaded from online banks, we've all wondered where the money goes and this gem provides a simple solution to the question.",
 			"The app compares the description/name of the transactions, accumulating the totals for the same string names, you're welcome to increase the string length it matches should you need but though testing it seems spot on.",
-			'Once your csv file is read in understanding is exported via a number of reports. You can instantly see the bottom line, review the summarized money in / money out, review the transactions indiviually and write all the details to a file. Everything is ordered in descending value with the details presented on your terminal window. Written in Ruby with no dependencies the Banco gem runs from your command line and is available.'
+			'Once your csv file is read in understanding is exported via a number of reports. You can instantly see the bottom line, review the summarized money in / money out, review the transactions indiviually and write all the details to a file. Everything is ordered in descending value with the details presented on your terminal window. Written in Ruby with no dependencies the Banco gem runs from your command line and is available.',
+			"Just type 'gem install banco' and you're good to go."
 		]
 	},
 	{

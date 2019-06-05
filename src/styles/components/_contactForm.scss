@@ -1,6 +1,6 @@
 .contact-form {
 	margin: 0 auto;
-	width: 60vw;
+	width: 70vw;
 	@media (min-width: $desktop-breakpoint) {
 		width: 20rem;
 	}
@@ -17,7 +17,7 @@
 
 .text-field {
 	height: 5vh;
-	width: 60vw;
+	width: 70vw;
 	margin-bottom: 3vh;
 	@media (min-width: $desktop-breakpoint) {
 		height: 2rem;
@@ -28,7 +28,7 @@
 
 .text-area {
 	height: 18vh;
-	width: 60vw;
+	width: 70vw;
 	margin-bottom: 3vh;
 	@media (min-width: $desktop-breakpoint) {
 		height: 8rem;
@@ -38,7 +38,7 @@
 }
 input,
 textarea {
-	width: 60vw;
+	width: 70vw;
 	@media (min-width: $desktop-breakpoint) {
 		width: 20rem;
 	}
@@ -50,7 +50,7 @@ textarea,
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(204, 204, 204);
 	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
-	width: 60vw;
+	width: 70vw;
 	@media (min-width: $desktop-breakpoint) {
 		width: 20rem;
 	}
@@ -78,7 +78,7 @@ textarea,
 .form__button {
 	display: flex;
 	justify-content: center;
-	width: 60vw;
+	width: 70vw;
 	margin: 2.5vh auto;
 	@media (min-width: $desktop-breakpoint) {
 		width: 20rem;

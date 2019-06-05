@@ -9,11 +9,16 @@
 }
 
 .projectItem {
-	margin: 2.5vh;
+	margin: 2vh;
 	@media (min-width: $desktop-breakpoint) {
 		margin: 0.75rem;
 		width: 12rem;
 	}
+}
+
+.project__spacer {
+	display: flex;
+	justify-content: center;
 }
 
 .project__header {
@@ -30,10 +35,6 @@
 	padding-right: 1vw;
 }
 
-.project__readmore {
-	text-align: right;
-}
-
 .project__icons img {
 	display: inline-block;
 	height: 2.5rem;
@@ -42,4 +43,19 @@
 		height: 2.15rem;
 		padding: 0.25rem 0.25rem;
 	}
+}
+
+.project__tagline {
+	text-align: center;
+}
+
+.project__readmore {
+	display: flex;
+	justify-content: center;
+	padding-top: 1vh;
+}
+
+.project__readmore:hover {
+	color: $activeLink;
+	cursor: pointer;
 }

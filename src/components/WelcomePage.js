@@ -18,8 +18,8 @@ const WelcomePage = () => (
 				<Icon className='techbox__icon' imageLink={`./images/js.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/mongo.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/express.png`} />
-				<Icon className='techbox__icon' imageLink={`./images/react.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/redux.png`} />
+				<Icon className='techbox__icon' imageLink={`./images/react.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/webpack.png`} />
 			</div>
 		</div>
