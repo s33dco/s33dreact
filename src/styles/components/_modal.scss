@@ -26,7 +26,8 @@
 	max-height: 85vh;
 	overflow: scroll;
 	@media (min-width: $desktop-breakpoint) {
-		padding: $m-size;
+		padding: $l-size;
+		max-width: 50rem;
 	}
 }
 
@@ -41,4 +42,7 @@
 
 .paragraph {
 	padding-bottom: 2.5vh;
+	@media (min-width: $desktop-breakpoint) {
+		padding: $s-size;
+	}
 }

@@ -9,6 +9,9 @@
 	padding: 2vh 0;
 	margin: 0;
 	text-decoration: none;
+	@media (min-width: $desktop-breakpoint) {
+		padding: $s-size;
+	}
 }
 
 .is-active {

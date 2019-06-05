@@ -6,20 +6,43 @@
 	}
 }
 
-.text-field,
-.text-area,
-.recaptcha-area {
-	margin-bottom: 3vh;
-}
+// .text-field,
+// .text-area,
+// .recaptcha-area {
+// 	// margin-bottom: 3vh;
+// 	@media (min-width: $desktop-breakpoint) {
+// 		margin: 1rem 0 0 0;
+// 	}
+// }
 
 .text-field {
 	height: 5vh;
+	width: 60vw;
+	margin-bottom: 3vh;
+	@media (min-width: $desktop-breakpoint) {
+		height: 2rem;
+		width: 20rem;
+		margin-bottom: 1.3rem;
+	}
 }
 
 .text-area {
 	height: 18vh;
+	width: 60vw;
+	margin-bottom: 3vh;
+	@media (min-width: $desktop-breakpoint) {
+		height: 8rem;
+		width: 20rem;
+		margin-bottom: 1.25rem;
+	}
 }
-
+input,
+textarea {
+	width: 60vw;
+	@media (min-width: $desktop-breakpoint) {
+		width: 20rem;
+	}
+}
 input,
 textarea,
 .recaptcha-area {
@@ -33,11 +56,19 @@ textarea,
 	}
 }
 
+.recaptcha-area {
+	margin-top: 5vh;
+}
+
 .errorText {
 	color: $red;
 	font-size: $error-size;
 	margin: 0 0 1.5vh 0;
 	padding: 0 0 0.5rem;
+	@media (min-width: $desktop-breakpoint) {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .error {
@@ -45,9 +76,12 @@ textarea,
 }
 
 .form__button {
+	display: flex;
+	justify-content: center;
 	width: 60vw;
-	margin: 0 auto 2.5vh;
+	margin: 2.5vh auto;
 	@media (min-width: $desktop-breakpoint) {
 		width: 20rem;
+		margin: 1.25rem auto;
 	}
 }

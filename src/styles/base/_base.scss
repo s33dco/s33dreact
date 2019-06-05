@@ -9,12 +9,20 @@ body {
 	color: #191d32;
 	font-family: 'Ubuntu', sans-serif;
 	line-height: 1.5;
+	@media (min-width: $desktop-breakpoint) {
+		margin: 0 $l-size;
+		max-width: $max-width;
+		margin: 0 auto;
+	}
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
 	margin: 0 5vw;
+	@media (min-width: $desktop-breakpoint) {
+		margin: 0 $xl-size;
+	}
 }
 
 header {
@@ -23,18 +31,31 @@ header {
 	position: fixed;
 	width: 90vw;
 	z-index: 10;
+	@media (min-width: $desktop-breakpoint) {
+		height: 3rem;
+		margin-left: -$xl-size;
+	}
 }
 
 main {
 	flex: 1;
 	margin-top: 6vh;
 	min-height: 78vh;
+	@media (min-width: $desktop-breakpoint) {
+		margin-top: 4rem;
+		min-height: 30.5rem;
+		width: 100%;
+	}
 }
 
 footer {
 	flex: 0;
 	height: 5vh;
 	width: 90vw;
+	@media (min-width: $desktop-breakpoint) {
+		height: 5rem;
+		width: 100%;
+	}
 }
 
 .page-title {
@@ -43,10 +64,18 @@ footer {
 	padding-bottom: 2.5vh;
 	text-align: center;
 	@media (min-width: $desktop-breakpoint) {
-		padding: 2.5vh 2.5vw;
+		padding-bottom: $s-size;
 	}
 }
 
 .active {
 	color: $red;
+}
+
+.welcome > p {
+	padding: $s-size;
+	text-align: center;
+	@media (min-width: $desktop-breakpoint) {
+		padding: $m-size;
+	}
 }

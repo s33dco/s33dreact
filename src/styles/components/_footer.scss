@@ -4,13 +4,23 @@
 .footer__copyright {
 	@extend .footer__strap;
 	padding-bottom: 2.5vh;
+	@media (min-width: $desktop-breakpoint) {
+		padding-bottom: 1rem;
+	}
 }
 
 .footer__icons {
 	@extend .footer__strap;
+	@media (min-width: $desktop-breakpoint) {
+		margin: 0.2rem;
+	}
 }
 
 .footer__icons img {
 	padding: 5px;
 	height: 5vh;
+	@media (min-width: $desktop-breakpoint) {
+		padding: 0.5rem;
+		height: 3rem;
+	}
 }

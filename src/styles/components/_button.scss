@@ -6,11 +6,14 @@
 	width: 40vw;
 	text-align: center;
 	@media (min-width: $desktop-breakpoint) {
-		width: 8rem;
+		width: 9rem;
 	}
 }
 
 .button__contact__modal {
 	@extend .button;
 	margin-top: 2.5vh;
+	@media (min-width: $desktop-breakpoint) {
+		margin-top: $m-size;
+	}
 }

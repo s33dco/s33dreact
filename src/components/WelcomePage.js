@@ -5,11 +5,11 @@ const WelcomePage = () => (
 		<div>
 			<h1 className='page-title'>Welcome to s33d</h1>
 		</div>
-		<div>
-			<p>JavaScript and Ruby flavoured web development.</p>
-			<p>JAMstack, Full Stack</p>
-			<p>Single page apps, RESTful APIS, web sites and applications, Rails and MERN.</p>
-			<p>so many technologies....</p>
+		<div className='welcome'>
+			<p>Ruby and JavaScript flavoured web development.</p>
+			<p>Front end, Back end, Full Stack, JAMStack.</p>
+			<p>Single page apps, RESTful APIS, web sites and applications.</p>
+			<p>Rails and MERN.</p>
 		</div>
 	</main>
 )
