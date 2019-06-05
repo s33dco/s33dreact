@@ -5,14 +5,14 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		max-width: 90vw;
 	}
 }
 
 .projectItem {
 	margin: 2.5vh;
 	@media (min-width: $desktop-breakpoint) {
-		width: 15rem;
+		margin: 0.75rem;
+		width: 12rem;
 	}
 }
 
@@ -40,6 +40,6 @@
 	padding: 1vh 1vw;
 	@media (min-width: $desktop-breakpoint) {
 		height: 2.15rem;
-		padding: 0.75vh 0.75vw;
+		padding: 0.25rem 0.25rem;
 	}
 }

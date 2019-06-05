@@ -11,8 +11,6 @@ body {
 	line-height: 1.5;
 	@media (min-width: $desktop-breakpoint) {
 		margin: 0 $l-size;
-		max-width: $max-width;
-		margin: 0 auto;
 	}
 }
 
@@ -25,11 +23,15 @@ body {
 	}
 }
 
+.page {
+	width: 100%;
+}
+
 header {
-	background: #fcfcfc;
+	background: $background;
 	height: 6vh;
 	position: fixed;
-	width: 90vw;
+	width: 100%;
 	z-index: 10;
 	@media (min-width: $desktop-breakpoint) {
 		height: 3rem;

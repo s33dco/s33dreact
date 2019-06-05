@@ -2,6 +2,10 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-evenly;
+	// @media (min-width: $desktop-breakpoint) {
+	// 	display: block;
+	// 	width: 100%;
+	// }
 }
 
 .header__link {
@@ -10,7 +14,7 @@
 	margin: 0;
 	text-decoration: none;
 	@media (min-width: $desktop-breakpoint) {
-		padding: $s-size;
+		padding: 1.1rem;
 	}
 }
 

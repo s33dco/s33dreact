@@ -9,15 +9,17 @@ import Footer from '../components/Footer'
 
 const AppRouter = () => (
 	<BrowserRouter>
-		<div className='container'>
+		<div className='page'>
 			<Header />
-			<Switch>
-				<Route path='/' component={WelcomePage} exact={true} />
-				<Route path='/Contact' component={ContactPage} exact={true} />
-				<Route path='/Projects' component={ProjectsPage} exact={true} />
-				<Route component={NotFoundPage} />
-			</Switch>
-			<Footer />
+			<div className='container'>
+				<Switch>
+					<Route path='/' component={WelcomePage} exact={true} />
+					<Route path='/Contact' component={ContactPage} exact={true} />
+					<Route path='/Projects' component={ProjectsPage} exact={true} />
+					<Route component={NotFoundPage} />
+				</Switch>
+				<Footer />
+			</div>
 		</div>
 	</BrowserRouter>
 )
