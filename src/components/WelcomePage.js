@@ -10,7 +10,6 @@ const WelcomePage = () => (
 			<p>Ruby and JavaScript flavoured web development.</p>
 			<p>Front end, Back end, Full Stack, JAMStack.</p>
 			<p>Single page apps, RESTful APIS, web sites and applications.</p>
-			<p>Rails and MERN.</p>
 			<div className='techbox'>
 				<Icon className='techbox__icon' imageLink={`./images/ruby.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/rails.png`} />

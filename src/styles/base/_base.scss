@@ -74,11 +74,3 @@ footer {
 .active {
 	color: $red;
 }
-
-.welcome > p {
-	padding: $s-size;
-	text-align: center;
-	@media (min-width: $desktop-breakpoint) {
-		padding: $m-size;
-	}
-}

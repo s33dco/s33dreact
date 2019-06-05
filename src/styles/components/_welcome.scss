@@ -1,7 +1,7 @@
 .techbox {
 	align-content: center;
-	margin: 0 auto;
-	width: 70vw;
+	margin: 2.5vh auto;
+	width: 60vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -9,4 +9,12 @@
 .techbox > img {
 	display: inline-block;
 	height: 6vh;
+}
+
+.welcome > p {
+	padding: $s-size;
+	text-align: center;
+	@media (min-width: $desktop-breakpoint) {
+		padding: $s-size;
+	}
 }
