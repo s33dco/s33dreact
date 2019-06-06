@@ -19,8 +19,8 @@ const WelcomePage = () => (
 				<Icon className='techbox__icon' imageLink={`./images/mysql.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/pg.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/awslambda.png`} />
-				<Icon className='techbox__icon' imageLink={`./images/socket.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/express.png`} />
+				<Icon className='techbox__icon' imageLink={`./images/socket.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/redux.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/react.png`} />
 				<Icon className='techbox__icon' imageLink={`./images/webpack.png`} />
