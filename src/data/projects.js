@@ -24,7 +24,8 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: 'A single page app online portfolio and contact page.',
 		paras: [
-			'A JAMstack single page app built with a React frontend and deployed as a static site and using a serverless AWS Lambda function for the contact page.'
+			'A JAMstack single page app built with a webpacked React frontend and deployed as a static site on Netlify using a serverless AWS Lambda function for the contact page.',
+			'A simple flex(box)ible design.'
 		]
 	},
 	{
@@ -66,8 +67,8 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: "Scraping the BBC's ten most read stories to your terminal window.",
 		paras: [
-			'Making use of the promised based HTTP client Axios and the browser emulator JSDOM BBCtopten heads over to the the BBC News website, identifies the ten most read stories, scrapes hte pages and delivers them to your terminal window.',
-			'There are no bells or whistles, simply the stories delivered to your screen. A great way to check the news, work best piped to less. The package is free to use and available on npm.'
+			'Making use of the promised based HTTP client Axios and the browser emulator JSDOM BBCtopten heads over to the the BBC News website, identifies the ten most read stories, scrapes the pages and delivers them to your terminal window.',
+			'There are no bells or whistles, simply the stories delivered to your screen. A great way to check the news, works best piped to less. The package is free to use and available on npm.'
 		]
 	},
 	{
@@ -79,10 +80,10 @@ export default [
 		intro: 'An app to make, manage and administer private auctions for export sales.',
 		paras: [
 			"An invitation only auction site developed so sales can be set up quickly and easily from a smart phone. Used to manage export auctions on a 'best bid first' basis the app is not an Ebay derivative, more of a private sales network.",
-			'The App supports multiple auciton houses and sale types which can be started at the click of a button.',
-			'Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
-			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers.',
-			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, be that buyers or sellers, only authorised users, (Auctioneers) have crud access to the data.',
+			'The App supports multiple auciton houses and sale types which can be started at the click of a button.Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
+			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers. Previous bids are stored on the db so future lots can be valued easily.',
+			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, users are authorized on a per sale type basis, be that buyers or sellers.'
+			'The admins, (Auctioneers) only have crud access to the data.',
 			'Fully tested with Rspec and ready to go. Get in touch to view the live site.'
 		]
 	},
@@ -92,7 +93,7 @@ export default [
 		icons: ['ruby.png', 'rails.png'],
 		intro: 'App upgrade and addition of mobile friendly responsive design.',
 		paras: [
-			"Updating the Greek based English bookseller's online store from Rails 3.1 to Rails 5.2.",
+			"Updating the Greek based English bookseller's online store from Rails 3.1 to Rails 5.2 to take advantage of Active Storage and othe Rails enhancements.",
 			'Keeping the look and feel the same but updating the SCSS/CSS to a responsive mobile friendly design.'
 		]
 	},
