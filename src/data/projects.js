@@ -82,7 +82,7 @@ export default [
 			"An invitation only auction site developed so sales can be set up quickly and easily from a smart phone. Used to manage export auctions on a 'best bid first' basis the app is not an Ebay derivative, more of a private sales network.",
 			'The App supports multiple auciton houses and sale types which can be started at the click of a button.Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
 			'Once the sale is closed commision are calculated and invoices/credit notes are emailed to the respective buyers and sellers. Previous bids are stored on the db so future lots can be valued easily.',
-			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, users are authorized on a per sale type basis, be that buyers or sellers.'
+			'The app has a public frontend with general information and a contact page with protected routes for autheticated users, users are authorized on a per sale type basis, be that buyers or sellers.',
 			'The admins, (Auctioneers) only have crud access to the data.',
 			'Fully tested with Rspec and ready to go. Get in touch to view the live site.'
 		]
