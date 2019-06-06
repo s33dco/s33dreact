@@ -140,8 +140,8 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		intro: 'Online store and company website for a raw food chocolatiere.',
 		paras: [
-			'A cusotmized install of the PHP Opencart ecommerce platform.',
-			"Re-templated with a bespoke CSS to harmonize with the company's product packaging."
+			'A customized install of the PHP Opencart ecommerce platform.',
+			"Re-templated with a bespoke CSS to harmonize with the company's product packaging and branding."
 		]
 	},
 	{
@@ -151,6 +151,6 @@ export default [
 		repo: 'https://github.com/s33dco/broadleaves',
 		repoAlt: 'view the repo on GitHub',
 		intro: 'A Woodland management blog for the Sussex based tree surgeon.',
-		paras: ['A Wordpress install with customized CSS.']
+		paras: ['A Wordpress install with customized CSS and a few standard WP plugins.']
 	}
 ]
