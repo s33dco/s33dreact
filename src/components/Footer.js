@@ -14,13 +14,13 @@ const Footer = () => (
 			/>
 			<IconLink
 				className='footer__image'
-				linkUrl={'https://github.com/s33dco'}
+				linkUrl={'https://rubygems.org/profiles/s33dco'}
 				imageLink={`./images/gems.png`}
 				linkUrlAlt={'visit GitHub profile'}
 			/>
 			<IconLink
 				className='footer__image'
-				linkUrl={'https://rubygems.org/profiles/s33dco'}
+				linkUrl={'https://github.com/s33dco'}
 				imageLink={`./images/github.png`}
 				linkUrlAlt={'visit RubyGems profile'}
 			/>
