@@ -17,6 +17,24 @@
 
 export default [
 	{
+		id: 11,
+		name: 'BBC10',
+		icons: ['ruby.png'],
+		gem: 'https://rubygems.org/gems/bbc10',
+		gemAlt: 'visit on RubyGems',
+		npm: '',
+		npmAlt: 'see package on NPM',
+		repo: 'https://github.com/s33dco/bbc10',
+		repoAlt: 'view the repo on GitHub',
+		site: '',
+		siteAlt: '',
+		intro: "Scraping the BBC's ten most read stories to your terminal window with Ruby.",
+		paras: [
+			'Relying on Nokogiri BBC10 heads over to the the BBC News website, identifies the ten most read stories, scrapes the pages and delivers them to your terminal window.',
+			'There are no bells or whistles, simply the stories delivered to your screen. A great way to check the news, works best piped to less. The package is free to use and available as a Ruby gem.'
+		]
+	},
+	{
 		id: 10,
 		name: 's33d',
 		icons: ['js.png', 'webpack.png', 'react.png'],
