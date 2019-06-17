@@ -18,7 +18,7 @@
 export default [
 	{
 		id: 11,
-		name: 'BBC10',
+		name: 'bbc10',
 		icons: ['ruby.png'],
 		gem: 'https://rubygems.org/gems/bbc10',
 		gemAlt: 'visit on RubyGems',
