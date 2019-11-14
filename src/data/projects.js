@@ -17,6 +17,20 @@
 
 export default [
 	{
+		id: 12,
+		name: 'AccountsDept',
+		icons: ['react.png', 'redux.png', 'express.png', 'mongo.png'],
+		repo: 'https://github.com/s33dco/invexpapi',
+		repoAlt: 'view the repo on GitHub',
+		site: '',
+		siteAlt: '',
+		intro: 'Making self employment and running your business easy.',
+		paras: [
+			'Take the stress out off self employment and run your business from your phone.',
+			'Know your exact tax position on a day to day basis. Create, email and download invoices, keep track of cash flow and expenses and view previous work by client, download reports by date and take care of that tax return.'
+		]
+	},
+	{
 		id: 11,
 		name: 'bbc10',
 		icons: ['ruby.png'],
@@ -28,7 +42,8 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		site: '',
 		siteAlt: '',
-		intro: "Scraping the BBC's ten most read stories to your terminal window with Ruby.",
+		intro:
+			"Scraping the BBC's ten most read stories to your terminal window with Ruby.",
 		paras: [
 			'Relying on Nokogiri BBC10 heads over to the the BBC News website, identifies the ten most read stories, scrapes the pages and delivers them to your terminal window.',
 			'There are no bells or whistles, simply the stories delivered to your screen. A great way to check the news, works best piped to less. The package is free to use and available as a Ruby gem.'
@@ -52,7 +67,8 @@ export default [
 		icons: ['js.png', 'node.png', 'express.png', 'mongo.png'],
 		repo: 'https://github.com/s33dco/sme',
 		repoAlt: 'view the repo on GitHub',
-		intro: 'A website with an invoice generating and expense tracking back end.',
+		intro:
+			'A website with an invoice generating and expense tracking back end.',
 		paras: [
 			'Built to take the hassle out of being self-employed SME is a company website with contact page, coupled with a secure back end to handle invoicing and HMRC tax returns.',
 			'The mobile friendly app enables the user to create and print or email invoices aswell as track of expenses from a mobile phone.',
@@ -68,7 +84,8 @@ export default [
 		npmAlt: 'view the package on NPM',
 		repo: 'https://github.com/s33dco/darkskycli',
 		repoAlt: 'view the repo on GitHub',
-		intro: 'Weather summary in your terminal for anywhere, anytime in any language.',
+		intro:
+			'Weather summary in your terminal for anywhere, anytime in any language.',
 		paras: [
 			"You know how it is, you're making arrangements, you need to know what the weather outlook will be. This NodeJS package is here to help, querry the place and date from the terminal and you quickly have the answer.",
 			"Darkskycli uses the Dark Sky API for the weather forecasts and Google API for geocoding. You will need API keys for both to use this package - don't worry they are free (with in reason). Through in the super friendly Yargs to handle the option parsing and Dotenv to hold said API keys and you're good to go.",
@@ -95,7 +112,8 @@ export default [
 		icons: ['ruby.png', 'rails.png'],
 		repo: 'https://github.com/s33dco/auction',
 		repoAlt: 'view the repo on GitHub',
-		intro: 'An app to make, manage and administer private auctions for export sales.',
+		intro:
+			'An app to make, manage and administer private auctions for export sales.',
 		paras: [
 			"An invitation only auction site developed so sales can be set up quickly and easily from a smart phone. Used to manage export auctions on a 'best bid first' basis the app is not an Ebay derivative, more of a private sales network.",
 			'The App supports multiple auciton houses and sale types which can be started at the click of a button.Whilst the sale is live bid data can be viewed by the Auctioneer on the lots.',
@@ -142,7 +160,8 @@ export default [
 		repoAlt: 'view the repo on GitHub',
 		site: '',
 		siteAlt: '',
-		intro: 'A statement profiler and analyizer, import CSV files, export a understanding.',
+		intro:
+			'A statement profiler and analyizer, import CSV files, export a understanding.',
 		paras: [
 			"Banco was written to summarize and profile csv files downloaded from online banks, we've all wondered where the money goes and this gem provides a simple solution to the question.",
 			"The app compares the description/name of the transactions, accumulating the totals for the same string names, you're welcome to increase the string length it matches should you need but though testing it seems spot on.",
@@ -169,6 +188,8 @@ export default [
 		repo: 'https://github.com/s33dco/broadleaves',
 		repoAlt: 'view the repo on GitHub',
 		intro: 'A Woodland management blog for the Sussex based tree surgeon.',
-		paras: ['A Wordpress install with customized CSS and a few standard WP plugins.']
+		paras: [
+			'A Wordpress install with customized CSS and a few standard WP plugins.'
+		]
 	}
-]
+];
